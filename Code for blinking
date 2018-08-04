@@ -1,0 +1,21 @@
+//initialization of LEDs on pins 7 and 13
+int led1=7;
+int led2=13;
+
+void setup() {
+//set the pin configuration mode as output
+pinMode(led1,OUTPUT);
+pinMode(led2,OUTPUT);
+}
+
+void loop() {
+//code for blinking of both LEDs alternatively
+digitalWrite(led1,HIGH);
+delay(30);
+digitalWrite(led2,LOW);
+delay(30);
+digitalWrite(led1,LOW);
+delay(30);
+digitalWrite(led2,HIGH);
+delay(30);
+}
